@@ -1,0 +1,63 @@
+body {
+    background-color: rgb(43, 43, 43);
+    color: aliceblue;
+}
+
+header {
+    border: 10px red solid;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+#Main {
+    display: grid;
+    border: 10px green solid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    grid-template-areas: 
+    ". h h h h h h pfp"
+    "s . . . . . . ."
+    "s . . . . . . ."
+    "s . . . . . . ."
+    "s . . . . . . ."
+    "s . . . . . . ."
+    "s . . . . . . ."
+    "s . . . . . . ."
+    "s . . . . . . ."
+    "s . . . . . . .";
+}
+
+.Main-item:nth-child(1) {
+    /* grid-row: 1; */
+    display: flex;
+    grid-area: h;
+    border: red 5px solid;
+    justify-content: center;
+    align-items: center;
+}
+
+.Main-item:nth-child(2) {
+    /* grid-row: 1; */
+    grid-area: pfp;
+}
+
+#pfp {
+    border-radius: 100%;
+    width: 60%;
+    
+    /* margin-left: 25%;
+    margin-top: 5%; */
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Main-item:nth-child(3) {
+    /* grid-row: 1; */
+    grid-area: s;
+    border: yellow 5px solid;
+}
