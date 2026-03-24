@@ -7,19 +7,208 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
+    <input type="checkbox" name="pfp-toggle" id="pfp-toggle">
     <div id="Main">
-        <header class="Main-item">
+        <header class="Main-item" id="head">
             <h1>CP.hu</h1>
         </header>
         <div class="Main-item">
-            <img src="pfp.png" alt="menő profilkép%!" id="pfp">
+            <label for="pfp-toggle">
+                <img src="pfp.png" alt="menő profilkép%!" id="pfp">
+            </label>
         </div>
-        <div class="Main-item">
-            Na mi van?
+        <div class="Main-item" id="right-menu">
+            <!-- szia :D) -->
+            <!-- <h2>Profilom</h2>
+            <p>
+                Név: Csaba Péter<br>
+                Kor: 17<br>
+                Kedvenc retró tech: PS1
+            </p> -->
+
+            <h2>Profil</h2>
+
+            <div class="profile-card">
+                <!-- <img src="pfp.png" alt="Profilkép"> -->
+                <div>
+                    <strong>cp_user87</strong>
+                    <p>Hardverbuherátor</p>
+                </div>
+            </div>
+
+            <div class="menu-section">
+                <h3>Fiók</h3>
+                <ul>
+                    <li>Profil szerkesztése</li>
+                    <li>Jelszó módosítása</li>
+                    <li>Email megerősítve</li>
+                </ul>
+            </div>
+
+            <div class="menu-section">
+                <h3>Beállítások</h3>
+                <ul>
+                    <li>Tömör feed nézet: be</li>
+                    <li>Értesítések: ki</li>
+                    <li>Privát üzenetek: csak ismerősök</li>
+                </ul>
+            </div>
+
+            <div class="menu-section">
+                <h3>Gyors műveletek</h3>
+                <ul>
+                    <li>Mentett posztok</li>
+                    <li>Saját hozzászólások</li>
+                    <li>Kijelentkezés</li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="Main-item" id="sidebar">
+            <!-- Na mi van? -->
+
+            <h2>ConnectUs</h2>
+            <p class="sidebar-lead">
+                Retró-tech témák, kérdések és mintaválaszok!
+            </p>
+        
+            <div class="sidebar-section">
+                <h3>Témák</h3>
+                <ul>
+                    <li>Hardver</li>
+                    <li>Monitorok</li>
+                    <li>Letöltések</li>
+                    <li>Régi perifériák</li>
+                </ul>
+            </div>
+        
+            <div class="sidebar-section">
+                <h3>Statisztika</h3>
+                <ul>
+                    <li>3 poszt</li>
+                    <li>9 válasz</li>
+                    <li>1 online profil</li>
+                </ul>
+            </div>
+        
+            <div class="sidebar-section">
+                <h3>Hangulat</h3>
+                <p>
+                    Retró fórum + modern közösségi layout keveréke.
+                </p>
+            </div>
+        </div>
+        <div class="Main-item" id="feed">
+            
+            <!-- ELSŐ POSZT -->
+             
+            <div class="post">
+                <div class="question">
+                    <img src="reddit_pic.jfif" alt="reddit logo"> 
+                    <h3>Régi billenyűzet csatlakoztatása</h3>
+                </div>
+                <p>Srácok hogyan kell ezt a régi kör alakú csatlakozójú billentyűzetet hozzákötni a gépemhez? Van egyáltalán ilyen dugasz a gépemen?</p>
+                <img src="old_keyboard.jfif" alt="régi billentyűzet">
+                <hr class="question-vonal">
+                <div class="answers">
+                    <img src="reddit_pic.jfif" alt="reddit logo"> 
+                    <ul>
+                        <li>
+                            Milyen géped van? Újba nehéz lesz bekötni, főleg ha laptopod van lol
+                        </li>
+                    </ul>
+
+                    <img src="reddit_pic.jfif" alt="reddit logo"> 
+                    <ul>
+                        <li>
+                            Ja ez offos xd
+                        </li>
+                    </ul>
+                    
+                    <img src="reddit_pic.jfif" alt="reddit logo"> 
+                    <ul>
+                        <li>
+                            Vágd szét a kábelt!
+                        </li>
+                    </ul>
+                </div>
+                <hr id="post1-vonal">
+            </div>
+
+            
+            <!-- MÁSODIK POSZT -->
+
+            <div class="post">
+                <div class="question">
+                    <img src="reddit_pic.jfif" alt=""> 
+                    <h3>Monitor tükrözése</h3>
+                </div>
+                <p>Volt veletek is már olyan, hogy egy 4:3-as monitort próbáltatok meg tükrözni egy 16:9-es kijelzőre? Hogy oldottátok meg? Fekete sávokkal, vagy nyújtással?</p>
+                <img src="monitor.jfif" alt="4:3 to 16:9 monitor">
+                <hr class="question-vonal">
+                <div class="answers">
+                    <img src="reddit_pic.jfif" alt=""> 
+                    <ul>
+                        <li>
+                            Én mindig nyújtással szoktam, de most hogy mondod, lehet hogy a fekete sávos megoldás jobb lenne.
+                        </li>
+                    </ul>
+
+                    <img src="reddit_pic.jfif" alt=""> 
+                    <ul>
+                        <li>
+                            Mikor hogy.
+                        </li>
+                    </ul>
+                    
+                    <img src="reddit_pic.jfif" alt=""> 
+                    <ul>
+                        <li>
+                            Sosem volt ilyen problémám, mert mindig 16:9-es monitort használok :D
+                        </li>
+                    </ul>
+                </div>
+                <hr id="post2-vonal">
+            </div>
+            
+            <!-- HARMADIK POSZT -->
+            
+            <div class="post">
+                <div class="question">
+                    <img src="reddit_pic.jfif" alt=""> 
+                    <h3>Unchess sakk letöltése</h3>
+                </div>
+                <p>Találtam egy új sakk játékot, de nem tudom, hogyan lehet letölteni. Unchess a neve, tudjátok, hogyan lehet letölteni?</p>
+                <img src="unchess.jfif" alt="Unchess">
+                <hr class="question-vonal">
+                <div class="answers">
+                    <img src="reddit_pic.jfif" alt=""> 
+                    <ul>
+                        <li>
+                            Szerintem csak a gyártó oldaláról lehet letölteni, de nem vagyok benne biztos.
+                        </li>
+                    </ul>
+
+                    <img src="reddit_pic.jfif" alt=""> 
+                    <ul>
+                        <li>
+                            Torrenten keresztül szedtem le, de nem tudom, hogy legális-e :D
+                        </li>
+                    </ul>
+                    
+                    <img src="reddit_pic.jfif" alt=""> 
+                    <ul>
+                        <li>
+                            Beírod netre és leszeded. Nem egy nagy dolog LOL
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
     <footer>
         Bye!
-    </footer>
+        @ 2026 CP.hu - ConnectUs! Minden jog fenntartva.
+    </footer>    
 </body>
 </html>
